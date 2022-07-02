@@ -13,6 +13,6 @@ urlpatterns = [
     path("venta/<id>", getVentaById),
     path("detalleVenta", homeDetalleVenta),
     path("detalleVenta/<id>", getDetalleVentaById),
-    path("mediopago", homeMedioPago),
-    path("mediopago/<id>", getMedioPagoById),
+    path("medioPago", homeMedioPago),
+    path("medioPago/<id>", getMedioPagoById),
 ]
