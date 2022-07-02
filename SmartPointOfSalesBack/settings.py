@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
     'rest_cliente',
     'rest_producto',
+    'rest_auth',
     'rest_venta'
 ]
 
@@ -84,6 +86,12 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': 'root'
     }
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication'
+    ]
 }
 
 
